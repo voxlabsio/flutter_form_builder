@@ -152,11 +152,11 @@ class FormBuilderState extends State<FormBuilder> {
 
   bool validate() {
     final hasError = !_formKey.currentState!.validate();
-    if (hasError) {
-      final wrongFields =
-          fields.values.where((element) => element.hasError).toList();
-      wrongFields.first.requestFocus();
-    }
+    // if (hasError) {
+    //   final wrongFields =
+    //       fields.values.where((element) => element.hasError).toList();
+    //   wrongFields.first.requestFocus();
+    // }
     return !hasError;
   }
 
